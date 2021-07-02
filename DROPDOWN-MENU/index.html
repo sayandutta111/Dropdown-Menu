@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DROODOWN MENU</title>
+	<style type="text/css">
+	
+body{
+	background: url("clock.jpg") center no-repeat;
+	height: 100vh;
+	background-size: cover;
+}
+
+.dropdown{
+	width: 80%;
+	height: 100vh;
+	margin: 0 auto;
+}
+
+.dropdown ul{
+	padding: 0;
+}
+
+.dropdown ul li{
+	float: left;
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 25px;
+	background-color: black;
+	color: #fff;
+	list-style: none;
+	text-align: center;
+	opacity: 0.6;
+
+}
+
+.dropdown ul li ul{
+	display: none;
+}
+
+.dropdown ul li:hover > ul{
+	display: block;
+}
+
+.dropdown ul li:hover{
+	background-color: #32CD32;
+	opacity: 0.9;
+}
+
+.dropdown ul li ul li{
+	position: relative;
+}
+
+.dropdown ul li ul li ul{
+	position: absolute;
+	left: 200px;
+	top: 0;
+}
+
+
+
+	</style>
+</head>
+<body>
+<div class="dropdown">
+
+	<ul>
+		<li>LONDON
+            <ul>
+            	<li>TAMES RIVER</li>
+            </ul>
+        </li>
+
+		<li>INDIA
+			<ul>
+				<li>GOA</li>
+				<li>KOLKATA</li>
+				<li>PUNE</li>
+				<li>DELHI</li>
+				<li>BANGALORE
+                    <ul>
+                    	<li>BIRIYANI</li>
+                    	<li>TECH CITY</li>
+                    </ul>
+                   
+				</li>
+			</ul>
+		</li>
+
+
+		<li>PARIS</li>
+		<li>DUBAI</li>
+		<li>BRAZIL</li>
+	</ul>
+</div>
+
+</body>
+</html>
